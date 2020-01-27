@@ -98,13 +98,13 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                     {
                         include 'tambahproduk.php';
                     }
-                    else if($_GET ['halaman']=="hapusproduk")
+                    else if($_GET ['halaman']=="hapususer")
                     {
-                        include 'hapusproduk.php';
+                        include 'hapususer.php';
                     }
-                    else if($_GET ['halaman']=="ubahproduk")
+                    else if($_GET ['halaman']=="ubahuser")
                     {
-                        include 'ubahproduk.php';
+                        include 'ubahuser.php';
                     }
                     else if ($_GET['halaman']=="logout")
                     {

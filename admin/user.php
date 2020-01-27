@@ -32,7 +32,8 @@
 			<td><?php echo $pecah['email_user'];?></td>
 			<td><?php echo $pecah['hp_user'];?></td>
 			<td>
-				<a href="" class = "btn btn-danger">hapus</a>
+				<a href = "index.php?halaman=hapususer&id=<?php echo $pecah["id_user"];?>" class="btn-danger btn">Hapus</a>
+				<a href = "index.php?halaman=ubahuser&id=<?php echo $pecah['id_user'];?>" class="btn btn-warning">Ubah</a>
 			</td>
 		</tr>
 		<?php $nomor++; ?>
