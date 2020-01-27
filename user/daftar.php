@@ -175,8 +175,8 @@
                             $tempat_lahir = $_POST["tempat_lahir"];
                             $tanggal_lahir = $_POST["tanggal_lahir"];
                             $tanggal = $_POST["tanggal"];
-                            $date2 = strtotime($tanggal);
-                            $tanggal2 = date("Y-m-d", $date2);
+                            $tanggal2 = DateTime::createFromFormat('d/m/Y', $tanggal);
+                            $tanggal3 =  $tanggal2->format('Y-m-d');
                             if (isset($_POST['jenis_kelamin'])) {
                                 $_POST['jenis_kelamin'];
                             }
@@ -206,7 +206,7 @@
                                 $koneksi->query("INSERT INTO user
                                     (username_user,password_user,tanggal_booking,tanggal_daftar,
                                     tempat_lahir_user,tanggal_lahir_user,jenis_kelamin_user,alamat_ktp_user,alamat_domisili_user,pendidikan_akhir_user,email_user,bukti_transfer,hp_user)
-                                    VALUES('$username','$password','$tanggal2','$tanggal_daftar','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
+                                    VALUES('$username','$password','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
 
                                     echo "<script>alert('pendaftaran sukses ,silahkan login')</script>";
                                 echo"<script>location='login.php';</script>";
