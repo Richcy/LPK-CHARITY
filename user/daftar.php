@@ -73,6 +73,7 @@
                                         <input class="input--style-4 js-datepicker" type="text" name="tanggal">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
+                                       <b>Perhatian! Booking hanya bisa memilih pada hari jum'at</b>
                                 </div>
                             </div>
                             <div class="col-2">
@@ -130,6 +131,7 @@
                             </div>
                         </div>
                         <a href="login.php">sudah punya akun? login</a>
+
                         
                         <div class="row row-space">
                             <div class="p-t-15">
@@ -189,16 +191,49 @@
                             $bukti_transfer = $_POST["bukti_transfer"];
                             $tanggal_daftar = date("Y-m-d H:i:sa");
 
-                            //cek apakan email sudah digunakan
+                            //konversi tanggal
+
+                            $dt=$tanggal3;
+ 
+                            $dt1 = strtotime($dt);
+                            $dt2 = date("l", $dt1);
+                            $dt3 = strtolower($dt2);
+                                                           
+
+                            //cek email 
 
                             $ambil = $koneksi->query("SELECT * FROM user
                                 WHERE email_user ='$email'");
                             $yangcocok = $ambil->num_rows;
-                            if($yangcocok==1)
+                            //cek tanggal
+                            $ambil2 = $koneksi->query("SELECT * FROM user
+                                WHERE tanggal_booking ='$tanggal3'");
+                            $tanggalcocok = $ambil2->num_rows;
+
+                            //logic untuk input data
+
+                            //cek hari booking apakah memilih hari jum'at?
+
+                            if(($dt3 != "friday"))
                             {
-                                echo "<script>alert('pendaftaran gagal ,email sudah digunakan')</script>";
+                                echo "<script>alert('pendaftaran gagal ,booking hari hanya dapat memilih hari jumat!')</script>";
+                                echo"<script>location='daftar.php';</script>";
+                            } 
+                            //cek email apakah sudah digunakan?
+
+                            elseif($yangcocok==1)
+                            {
+                                echo "<script>alert('pendaftaran gagal ,email sudah digunakan!')</script>";
                                 echo"<script>location='daftar.php';</script>";
                             }
+
+                            //cek apakah booking sudah penuh?
+                            elseif($tanggalcocok>5)
+                            {
+                                echo "<script>alert('pendaftaran gagal ,booking penuh!')</script>";
+                                echo"<script>location='daftar.php';</script>";
+                            }
+                            //persyaratan memenuhi kriteria
                             else
                             {
                                 //query insert ke tabel pelanggan
