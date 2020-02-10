@@ -1,8 +1,8 @@
-<h2>Ubah User</h2>
+<h2>Ubah Pendaftar</h2>
 
 <?php
 
-$ambil=$koneksi->query("SELECT * FROM user WHERE id_user='$_GET[id]'");
+$ambil=$koneksi->query("SELECT * FROM pendaftar WHERE id_pendaftar='$_GET[id]'");
 $pecah = $ambil->fetch_assoc();
 //$fotolama=$pecah['foto_produk'];
 
@@ -14,20 +14,16 @@ echo "</pre>";
 
 <form method = "post" enctype="multipart/form-data">
 	<div class = "form-group">
-		<label>Username</label>
-		<input type="text" name="username" class="form-control"value ="<?php echo $pecah['username'];?>">
+		<label>Nama Lengkap</label>
+		<input type="text" name="nama" class="form-control"value ="<?php echo $pecah['username_pendaftar'];?>">
 	</div>
 	<div class = "form-group">
-		<label>Password</label>
-		<input type="text" name="password" class="form-control" value = "<?php echo $pecah['password'];?>">
+		<label>Nomor Induk KTP</label>
+		<input type="text" name="nik" class="form-control" value = "<?php echo $pecah['nik_pendaftar'];?>">
 	</div>
 	<div class = "form-group">
-		<label>level user</label><br>
-		  <select name="level">
-          <option disabled="disabled" selected="selected">Level User</option>
-          <option value="admin">Admin</option>
-		  <option value="user">User</option>
-          </select>
+		<label>Email</label>
+		<input type="email" name="email" class="form-control"value = "<?php echo $pecah['email_pendaftar']; ?>">
 	</div>
 	
 	<button class = "btn btn-primary" name="ubah">Ubah</button>
@@ -55,17 +51,17 @@ if(isset($_POST['ubah']))
 	}*/
 	//else
 	{
-		$koneksi->query("UPDATE user SET username='$_POST[username]',
-			password='$_POST[password]',level_user='$_POST[level]'
-			WHERE id_user='$_GET[id]'");
+		$koneksi->query("UPDATE pendaftar SET username_pendaftar='$_POST[nama]',
+			nik_pendaftar='$_POST[nik]',email_pendaftar='$_POST[email]'
+			WHERE id_pendaftar='$_GET[id]'");
 	}
-	echo "<script>alert('data user telah diubah');</script>";
-	echo "<script>location='index.php?halaman=user';</script>";
+	echo "<script>alert('data pendaftar telah diubah');</script>";
+	echo "<script>location='index.php?halaman=pendaftar';</script>";
 
 }
 elseif(isset($_POST['kembali']))
 {
-	echo "<script>location='index.php?halaman=user';</script>";
+	echo "<script>location='index.php?halaman=pendaftar';</script>";
 }
 
   ?>

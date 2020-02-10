@@ -26,6 +26,67 @@
 
     <!-- Main CSS-->
     <link href="assets/css/main.css" rel="stylesheet" media="all">
+
+    <!-- CSS POP UP-->
+    <style>
+    /* Popup container - can be anything you want */
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;} 
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    </style>
+
 </head>
 
 <body>
@@ -38,14 +99,14 @@
                         
                             
                                 <div class="input-group">
-                                    <label class="label">Nama Lengkap</label>
+                                    <label class="label">Nama Lengkap (Sesuai KTP)</label>
                                     <input class="input--style-4" type="text" name="username">
                                 </div>
                             
                             
                                 <div class="input-group">
-                                    <label class="label">Password</label>
-                                    <input class="input--style-4" type="password" name="password">
+                                    <label class="label">Nomor Induk KTP</label>
+                                    <input class="input--style-4" type="text" name="nik">
                                 </div>
                             
                         <div class="row row-space">
@@ -73,7 +134,6 @@
                                         <input class="input--style-4 js-datepicker" type="text" name="tanggal">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
-                                       <b>Perhatian! Booking hanya bisa memilih pada hari jum'at</b>
                                 </div>
                             </div>
                             <div class="col-2">
@@ -126,11 +186,13 @@
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
                                     <option value="SMA">SMA</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Sarjana">Sarjana</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
-                        <a href="login.php">sudah punya akun? login</a>
+                        <a href="login.php">sudah mendaftar?</a>
 
                         
                         <div class="row row-space">
@@ -142,7 +204,20 @@
                             </div>
 
                         </div>
+                        <!-- POP UP
+                        <script>
+                        // When the user clicks on <div>, open the popup
+                        function myFunction() {
+                          var popup = document.getElementById("myPopup");
+                          popup.classList.toggle("show");
+                        }
+                    </script>
+                    <div class="popup" onclick="myFunction()">Click me!
+                      <span class="popuptext" id="myPopup">Popup text...</span>
+                    </div>
+                    -->
                     </form>
+                     
                 </div>
             </div>
         </div>
@@ -150,6 +225,8 @@
 
     <!-- Jquery JS-->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
+   
+
     <!-- Vendor JS-->
     <script src="assets/vendor/select2/select2.min.js"></script>
     <script src="assets/vendor/datepicker/moment.min.js"></script>
@@ -173,7 +250,7 @@
 
                             date_default_timezone_set('Asia/Jakarta');
                             $username = $_POST["username"];
-                            $password = $_POST["password"];
+                            $nik = $_POST["nik"];
                             $tempat_lahir = $_POST["tempat_lahir"];
                             $tanggal_lahir = $_POST["tanggal_lahir"];
                             $tanggal = $_POST["tanggal"];
@@ -214,14 +291,14 @@
 
                             //cek hari booking apakah memilih hari jum'at?
 
-                            if(($dt3 != "friday"))
+                            /*if(($dt3 != "friday"))
                             {
                                 echo "<script>alert('pendaftaran gagal ,booking hari hanya dapat memilih hari jumat!')</script>";
                                 echo"<script>location='daftar.php';</script>";
-                            } 
+                            } */
                             //cek email apakah sudah digunakan?
 
-                            elseif($yangcocok==1)
+                            if($yangcocok==1)
                             {
                                 echo "<script>alert('pendaftaran gagal ,email sudah digunakan!')</script>";
                                 echo"<script>location='daftar.php';</script>";
@@ -236,14 +313,14 @@
                             //persyaratan memenuhi kriteria
                             else
                             {
-                                //query insert ke tabel pelanggan
+                                //query insert ke tabel pendaftar
 
-                                $koneksi->query("INSERT INTO user
-                                    (username_user,password_user,tanggal_booking,tanggal_daftar,
-                                    tempat_lahir_user,tanggal_lahir_user,jenis_kelamin_user,alamat_ktp_user,alamat_domisili_user,pendidikan_akhir_user,email_user,bukti_transfer,hp_user)
-                                    VALUES('$username','$password','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
+                                $koneksi->query("INSERT INTO pendaftar
+                                    (username_pendaftar,nik_pendaftar,tanggal_booking,tanggal_daftar,
+                                    tempat_lahir_pendaftar,tanggal_lahir_pendaftar,jenis_kelamin_pendaftar,alamat_ktp_pendaftar,alamat_domisili_pendaftar,pendidikan_akhir_pendaftar,email_pendaftar,bukti_transfer,hp_pendaftar)
+                                    VALUES('$username','$nik','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
 
-                                    echo "<script>alert('pendaftaran sukses ,silahkan login')</script>";
+                                 echo "<script>alert('Terima kasih anda sudah mendaftar! Silahkan tunggu konfirmasi dari admin ke nomer WA anda')</script>";
                                 echo"<script>location='login.php';</script>";
                             }
 

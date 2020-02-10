@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 session_start();
 //koneksi ke database
 include 'koneksi.php';
@@ -58,9 +58,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
 				
 					
                     <li> <a href="index.php"><i class="fa fa-dashboard fa-3x"></i> Home</a></li>
-                    <li> <a href="index.php?halaman=user"><i class="fa fa-dashboard fa-3x"></i> User</a></li>
-                    <li> <a href="index.php?halaman=pembelian"><i class="fa fa-dashboard fa-3x"></i> Pembelian</a></li>
-                    <li> <a href="index.php?halaman=pelanggan"><i class="fa fa-dashboard fa-3x"></i> Pelanggan</a></li>
+                    <li> <a href="index.php?halaman=pendaftar"><i class="fa fa-dashboard fa-3x"></i> Data Pendaftar</a></li>
+                    <li> <a href="index.php?halaman=transaksi"><i class="fa fa-dashboard fa-3x"></i> Data Transaksi</a></li>
+                    <li> <a href="index.php?halaman=user"><i class="fa fa-dashboard fa-3x"></i> Data User</a></li>
                     <li> <a href="index.php?halaman=logout"><i class="fa fa-dashboard fa-3x"></i> Logout</a></li>
                      
                 </ul>
@@ -74,13 +74,17 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
               <?php 
               if (isset($_GET['halaman']))
                 {
-                    if($_GET['halaman']=="user")
+                    if($_GET['halaman']=="pendaftar")
+                    {
+                        include 'pendaftar.php';
+                    }
+                    else if($_GET['halaman']=="transaksi")
+                    {
+                        include 'transaksi.php';
+                    }
+                     else if($_GET['halaman']=="user")
                     {
                         include 'user.php';
-                    }
-                    else if($_GET['halaman']=="pembelian")
-                    {
-                        include 'pembelian.php';
                     }
                     else if($_GET['halaman']=="pelanggan")
                     {
@@ -98,7 +102,15 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                     {
                         include 'tambahproduk.php';
                     }
-                    else if($_GET ['halaman']=="hapususer")
+                    else if($_GET ['halaman']=="hapuspendaftar")
+                    {
+                        include 'hapuspendaftar.php';
+                    }
+                    else if($_GET ['halaman']=="ubahpendaftar")
+                    {
+                        include 'ubahpendaftar.php';
+                    }
+                        else if($_GET ['halaman']=="hapususer")
                     {
                         include 'hapususer.php';
                     }

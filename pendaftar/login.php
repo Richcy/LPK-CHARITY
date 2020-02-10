@@ -18,7 +18,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Login User</title>
+    <title>Cek Pendaftaran Anda</title>
 
     <!-- Icons font CSS-->
     <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -38,19 +38,21 @@
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <center><h2 class="title">Login</h2></center>
+                    <center><h2 class="title">Cek Pendaftaran Anda</h2></center>
                     <form method="POST">      
                         <div class="input-group">
                                 <div class="input-group">
-                                    <label class="label">Username</label>
+                                    <label class="label">Nama Lengkap (Sesuai KTP)*</label>
                                     <input class="input--style-4" type="text" name="username">
                                 </div>
                             
                                 <div class="input-group">
-                                    <label class="label">Password</label>
+                                    <label class="label">Nomor Induk KTP</label>
                                     <input class="input--style-4" type="password" name="password">
                                 </div>
-                            <a href="daftar.php">belum punya akun? daftar</a>
+                                <strong>*nama harus sesuai saat pendaftaran</strong><br>
+                                <a href="daftar.php">belum mendaftar?</a><br>
+                          
                         </div>
 
                         <div class="row row-space">
@@ -58,7 +60,7 @@
                                 <button class="btn btn--radius-2 btn--blue" type="submit" name="kembali">Kembali</button>
                             </div>
                             <div class="p-t-15">
-                                <center><button class="btn btn--radius-2 btn--blue" type="submit" name="login">Login</button></center>
+                                <center><button class="btn btn--radius-2 btn--blue" type="submit" name="login">Cek</button></center>
                             </div>
                         </div>
                     </form>
