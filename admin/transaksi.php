@@ -24,10 +24,11 @@
 					echo $tanggal;
 				?>
 			</td>
-			<td><?php echo $pecah['bukti_transfer'];?></td>
+
+			<td><img src="../pendaftar/assets/img/<?php echo $pecah['bukti_transfer'] ?>" width = "500"></td>
 			<td>
-				<a href = "index.php?halaman=hapuspendaftar&id=<?php echo $pecah["id_pendaftar"];?>" class="btn-danger btn">Hapus</a>
-				<a href = "index.php?halaman=ubahpendaftar&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-warning">Ubah</a>
+				<a href = "index.php?halaman=hapuspendaftar&id=<?php echo $pecah["id_pendaftar"];?>" class="btn btn-success">Konfirmasi</a>
+				<a href = "index.php?halaman=ubahpendaftar&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-danger">Tolak</a>
 			</td>
 		</tr>
 		<?php $nomor++; ?>

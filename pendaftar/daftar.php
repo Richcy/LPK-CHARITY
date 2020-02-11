@@ -95,7 +95,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Form Pendaftaran</h2>
-                    <form method="POST">
+                    <form method="POST" enctype="multipart/form-data">
                         
                             
                                 <div class="input-group">
@@ -176,7 +176,7 @@
                         </div>
                         <div class="input-group">
                             <label class="label">Bukti Transfer</label>
-                            <input class="input--style-4" type="text" name="bukti_transfer">
+                            <input class="input" type="file" name="bukti_transfer">
                         </div>
                         <div class="input-group">
                             <label class="label">Pendidikan Akhir</label>
@@ -246,7 +246,8 @@
 
                         if(isset($_POST["daftar"]))
                         {
-                            //mengambil isian nama, password dll
+                          
+                            //mengambil isian nama, nik dll
 
                             date_default_timezone_set('Asia/Jakarta');
                             $username = $_POST["username"];
@@ -265,8 +266,13 @@
                             $alamat_ktp = $_POST["alamat_ktp"];
                             $alamat_domisili = $_POST["alamat_domisili"];
                             $pendidikan_akhir = $_POST["pendidikan_akhir"];
-                            $bukti_transfer = $_POST["bukti_transfer"];
                             $tanggal_daftar = date("Y-m-d H:i:sa");
+                            //upload foto bukti transfer
+                            $bukti_transfer = $_FILES['bukti_transfer']['name'];
+                            $lokasi = $_FILES['bukti_transfer']['tmp_name'];
+                            move_uploaded_file($lokasi,"assets/img/".$bukti_transfer);
+
+                          
 
                             //konversi tanggal
 

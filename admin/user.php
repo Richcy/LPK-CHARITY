@@ -7,7 +7,9 @@
 			<th>Username</th>
 			<th>Password</th>
 			<th>Level User</th>
+			<?php if ($_SESSION["level_login"]="admin"): ?>
 			<th>Aksi</th>
+			<?php endif ?>
 		</tr>
 	</thead>
 	<tbody>
@@ -19,12 +21,19 @@
 			<td><?php echo $pecah['username'];?></td>
 			<td><?php echo $pecah['password'];?></td>
 			<td><?php echo $pecah['level_user'];?></td>
+
+			<?php if ($_SESSION["level_login"]="admin"): ?>
 			<td>
-				<a href = "index.php?halaman=hapususer&id=<?php echo $pecah["id_user"];?>" class="btn-danger btn">Hapus</a>
 				<a href = "index.php?halaman=ubahuser&id=<?php echo $pecah['id_user'];?>" class="btn btn-warning">Ubah</a>
+				<a href = "index.php?halaman=hapususer&id=<?php echo $pecah["id_user"];?>" class="btn-danger btn">Hapus</a>
 			</td>
+			<?php endif ?>
 		</tr>
 		<?php $nomor++; ?>
 		<?php } ?>
 	</tbody>
 </table>
+
+		<?php if ($_SESSION["level_login"]="admin"): ?>
+	<a href = "index.php?halaman=tambahuser" class="btn-primary btn">Tambah User</a>
+		<?php endif ?>

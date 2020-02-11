@@ -4,12 +4,14 @@ session_start();
 include 'koneksi.php';
 
 
-if(!isset($_SESSION['admin']))
+/*if(!$_SESSION["login"]="admin"|| !$_SESSION["login"]="staff")
 {
     echo"<script>alert('Anda harus login');</script>";
     echo"<script>location='login.php'</script>";
     exit();
 }
+*/
+
 
 
 
@@ -19,7 +21,11 @@ if(!isset($_SESSION['admin']))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+        <?php if ($_SESSION["level_login"]="admin"): ?>
+            <title>Halaman Admin</title>
+        <?php elseif ($_SESSION["level_login"]="staff"): ?>
+            <title>Halaman Staff</title>
+        <?php endif ?>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -41,12 +47,16 @@ if(!isset($_SESSION['admin']))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Binary admin</a> 
+                     <?php if ($_SESSION["level_login"]="admin"): ?>
+                        <a class="navbar-brand" href="index.html">Halaman Admin</a>
+                     <?php elseif ($_SESSION["level_login"]="staff"): ?>
+                        <a class="navbar-brand" href="index.html">Halaman Staff</a>
+                     <?php endif ?> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -61,8 +71,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                     <li> <a href="index.php?halaman=pendaftar"><i class="fa fa-dashboard fa-3x"></i> Data Pendaftar</a></li>
                     <li> <a href="index.php?halaman=transaksi"><i class="fa fa-dashboard fa-3x"></i> Data Transaksi</a></li>
                     <li> <a href="index.php?halaman=user"><i class="fa fa-dashboard fa-3x"></i> Data User</a></li>
-                    <li> <a href="index.php?halaman=logout"><i class="fa fa-dashboard fa-3x"></i> Logout</a></li>
-                     
+                    <li> <a href="index.php?halaman=logout"><i class="fa fa-dashboard fa-3x"></i> logout</a></li>
                 </ul>
                
             </div>
@@ -98,9 +107,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                     {
                         include 'detail.php';
                     }
-                    else if($_GET ['halaman']=="tambahproduk")
+                    else if($_GET ['halaman']=="tambahuser")
                     {
-                        include 'tambahproduk.php';
+                        include 'tambahuser.php';
                     }
                     else if($_GET ['halaman']=="hapuspendaftar")
                     {

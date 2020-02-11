@@ -18,7 +18,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Login Admin</title>
+    <title>Login</title>
 
     <!-- Icons font CSS-->
     <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -87,8 +87,8 @@ if(isset($_POST["login"]))
     $username = $_POST["username"];
     $password = $_POST["password"];
     //lakukan query ngecek akun di tabel pelanggan di db
-    $ambil = $koneksi->query("SELECT * FROM admin 
-        WHERE username_admin='$username' AND password_admin='$password'");
+    $ambil = $koneksi->query("SELECT * FROM user 
+        WHERE username='$username' AND password='$password'");
 
     // ngitung akun yang terambil
     $akunyangcocok = $ambil->num_rows;
@@ -99,10 +99,27 @@ if(isset($_POST["login"]))
         // anda sukses login
         // mendapatkan akun dlm bentuk array
         $akun = $ambil->fetch_assoc();
-        // simpan di session pelanggan
-        $_SESSION["admin"] = $akun;
-        echo "<script>alert('anda sukses login');</script>";
-        echo "<script>location='index.php';</script>";
+        $_SESSION['sesi'] = $akun;
+          echo "<script>alert('anda sukses login');</script>";
+            echo "<script>location='index.php';</script>";
+        // jika level user = admin
+       /* if($akun['level_user']=="admin")
+        {
+             $_SESSION['login'] = $akun;
+             $_SESSION['level'] = $akun['level_user'];
+            echo "<script>alert('anda sukses login sebagai admin');</script>";
+            echo "<script>location='index.php';</script>";
+        }
+        //jika level user = staff
+          elseif($akun['level_user']=="staff")
+        {
+             $_SESSION['login'] = $akun;
+             $_SESSION['level'] = $akun['level_user'];
+            echo "<script>alert('anda sukses login sebagai staff');</script>";
+            echo "<script>location='index.php';</script>";
+        }*/
+       
+      
     }
     else
     {

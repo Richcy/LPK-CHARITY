@@ -26,7 +26,7 @@ echo "</pre>";
 		  <select name="level">
           <option disabled="disabled" selected="selected">Level User</option>
           <option value="admin">Admin</option>
-		  <option value="user">User</option>
+		  <option value="staff">Staff</option>
           </select>
 	</div>
 	
