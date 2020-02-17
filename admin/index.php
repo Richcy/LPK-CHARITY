@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 session_start();
 //koneksi ke database
 include 'koneksi.php';
@@ -21,12 +21,8 @@ include 'koneksi.php';
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <?php if ($_SESSION["level_login"]="admin"): ?>
             <title>Halaman Admin</title>
-        <?php elseif ($_SESSION["level_login"]="staff"): ?>
-            <title>Halaman Staff</title>
-        <?php endif ?>
-	<!-- BOOTSTRAP STYLES-->
+    <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
@@ -47,11 +43,7 @@ include 'koneksi.php';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                     <?php if ($_SESSION["level_login"]="admin"): ?>
                         <a class="navbar-brand" href="index.html">Halaman Admin</a>
-                     <?php elseif ($_SESSION["level_login"]="staff"): ?>
-                        <a class="navbar-brand" href="index.html">Halaman Staff</a>
-                     <?php endif ?> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -62,11 +54,11 @@ font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger squar
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-				<li class="text-center">
+                <li class="text-center">
                     <img src="assets/img/find_user.png" class="user-image img-responsive"/>
-					</li>
-				
-					
+                    </li>
+                
+                    
                     <li> <a href="index.php"><i class="fa fa-dashboard fa-3x"></i> Home</a></li>
                     <li> <a href="index.php?halaman=pendaftar"><i class="fa fa-dashboard fa-3x"></i> Data Pendaftar</a></li>
                     <li> <a href="index.php?halaman=transaksi"><i class="fa fa-dashboard fa-3x"></i> Data Transaksi</a></li>
