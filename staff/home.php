@@ -1,8 +1,1 @@
-
-<pre><?php print_r($_SESSION); ?></pre>
-<?php  
-
-
-?>
-
-
+<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>

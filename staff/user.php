@@ -5,7 +5,6 @@
 		<tr>
 			<th>No</th>
 			<th>Username</th>
-			<th>Password</th>
 			<th>Level User</th>
 		</tr>
 	</thead>
@@ -16,7 +15,6 @@
 		<tr>
 			<td><?php echo $nomor; ?></td>
 			<td><?php echo $pecah['username'];?></td>
-			<td><?php echo $pecah['password'];?></td>
 			<td><?php echo $pecah['level_user'];?></td>
 		</tr>
 		<?php $nomor++; ?>
