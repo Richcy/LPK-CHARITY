@@ -254,6 +254,8 @@
                             $nik = $_POST["nik"];
                             $tempat_lahir = $_POST["tempat_lahir"];
                             $tanggal_lahir = $_POST["tanggal_lahir"];
+                            $tanggal_lahir2 = DateTime::createFromFormat('d/m/Y', $tanggal_lahir);
+                            $tanggal_lahir3 =  $tanggal_lahir2->format('Y-m-d');
                             $tanggal = $_POST["tanggal"];
                             $tanggal2 = DateTime::createFromFormat('d/m/Y', $tanggal);
                             $tanggal3 =  $tanggal2->format('Y-m-d');
@@ -324,7 +326,7 @@
                                 $koneksi->query("INSERT INTO pendaftar
                                     (username_pendaftar,nik_pendaftar,tanggal_booking,tanggal_daftar,
                                     tempat_lahir_pendaftar,tanggal_lahir_pendaftar,jenis_kelamin_pendaftar,alamat_ktp_pendaftar,alamat_domisili_pendaftar,pendidikan_akhir_pendaftar,email_pendaftar,bukti_transfer,hp_pendaftar)
-                                    VALUES('$username','$nik','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
+                                    VALUES('$username','$nik','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir3','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
 
                                  echo "<script>alert('Terima kasih anda sudah mendaftar! Silahkan tunggu konfirmasi dari admin ke nomer WA anda')</script>";
                                 echo"<script>location='login.php';</script>";

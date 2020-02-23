@@ -1,5 +1,5 @@
 <h2>Data Pendaftar</h2>
-
+<div class="table-responsive">
 <table class = "table table-bordered">
 	<thead>
 		<tr>
@@ -47,3 +47,4 @@
 		<?php } ?>
 	</tbody>
 </table>
+</div>

@@ -43,12 +43,12 @@
                         <div class="input-group">
                                 <div class="input-group">
                                     <label class="label">Nama Lengkap (Sesuai KTP)*</label>
-                                    <input class="input--style-4" type="text" name="username">
+                                    <input class="input--style-4" type="text" name="nama">
                                 </div>
                             
                                 <div class="input-group">
                                     <label class="label">Nomor Induk KTP</label>
-                                    <input class="input--style-4" type="password" name="password">
+                                    <input class="input--style-4" type="text" name="nik">
                                 </div>
                                 <strong>*nama harus sesuai saat pendaftaran</strong><br>
                                 <a href="daftar.php">belum mendaftar?</a><br>
@@ -86,11 +86,11 @@
 // jika ada tombol simpan(tombol simpan di tekan)
 if(isset($_POST["login"]))
 {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    $nama = $_POST["nama"];
+    $nik = $_POST["nik"];
     //lakukan query ngecek akun di tabel pelanggan di db
-    $ambil = $koneksi->query("SELECT * FROM user 
-        WHERE username_user='$username' AND password_user='$password'");
+    $ambil = $koneksi->query("SELECT * FROM pendaftar 
+        WHERE username_pendaftar='$nama' AND nik_pendaftar='$nik'");
 
     // ngitung akun yang terambil
     $akunyangcocok = $ambil->num_rows;
@@ -98,19 +98,15 @@ if(isset($_POST["login"]))
     // jika 1 akun yang cocok, maka dologinkan
     if($akunyangcocok==1)
     {
-        // anda sukses login
-        // mendapatkan akun dlm bentuk array
-        $akun = $ambil->fetch_assoc();
-        // simpan di session pelanggan
-        $_SESSION["admin"] = $akun;
-        echo "<script>alert('anda sukses login');</script>";
-        echo "<script>location='index.php';</script>";
+        // belum konfirmasi admin
+        echo "<script>alert('Maaf data anda belum dikonfirmasi oleh admin');</script>";
+        
+
     }
     else
     {
-        // anda gagal login
-        echo "<script>alert('anda gagal login, periksa akun anda!');</script>";
-        echo "<script>location='login.php';</script>";
+        // sudah konfirmasi admin
+        echo "<script>alert('Selamat! data anda telah di konfirmasi oleh admin');</script>";
     }
 }
 else if(isset($_POST["kembali"]))

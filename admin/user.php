@@ -1,5 +1,5 @@
 <h2>Data User</h2>
-
+<div class="table-responsive">
 <table class = "table table-bordered">
 	<thead>
 		<tr>
@@ -29,5 +29,5 @@
 		<?php } ?>
 	</tbody>
 </table>
-
+</div>
 	<a href = "index.php?halaman=tambahuser" class="btn-primary btn">Tambah User</a>
