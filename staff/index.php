@@ -20,7 +20,7 @@ if(!isset($_SESSION['level']))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Halaman Admin</title>
+            <title>Halaman Staff</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -42,7 +42,7 @@ if(!isset($_SESSION['level']))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                        <a class="navbar-brand" href="index.html">Halaman Admin</a>
+                        <a class="navbar-brand" href="index.html">Halaman Staff</a>
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;

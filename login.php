@@ -108,7 +108,7 @@ if(isset($_POST["login"]))
              $_SESSION['password'] = $password;
              $_SESSION['level'] = $akun['level_user'];
             echo "<script>alert('anda sukses login sebagai admin');</script>";
-            echo "<script>location='index.php';</script>";
+            echo "<script>location='admin/index.php';</script>";
         }
         //jika level user = staff
           elseif($akun['level_user']=="staff")
@@ -117,7 +117,7 @@ if(isset($_POST["login"]))
              $_SESSION['password'] = $password;
              $_SESSION['level'] = $akun['level_user'];
             echo "<script>alert('anda sukses login sebagai staff');</script>";
-            echo "<script>location='index.php';</script>";
+            echo "<script>location='staff/index.php';</script>";
         }
        
       
@@ -131,7 +131,7 @@ if(isset($_POST["login"]))
 }
 else if(isset($_POST["kembali"]))
 {
-    echo "<script>location='../index.php';</script>";
+    echo "<script>location='index.php';</script>";
 }
 
 

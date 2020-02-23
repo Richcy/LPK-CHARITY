@@ -77,7 +77,7 @@
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
                   <li><a href="pendaftar/daftar.php" class="nav-link">Pendaftaran</a></li>
                   <li><a href="pendaftar/login.php" class="nav-link">Cek Pendaftaran</a></li>
-                  <li><a href="admin/login.php" class="nav-link">Login</a></li>
+                  <li><a href="login.php" class="nav-link">Login</a></li>
                 </ul>
               </nav>
 
