@@ -98,13 +98,14 @@ if(isset($_POST["login"]))
         // anda sukses login
         // mendapatkan akun dlm bentuk array
         $akun = $ambil->fetch_assoc();
-        $_SESSION['sesi'] = $akun;
+        /*$_SESSION['sesi'] = $akun;
           echo "<script>alert('anda sukses login');</script>";
-            echo "<script>location='index.php';</script>";
+            echo "<script>location='index.php';</script>";*/
         // jika level user = admin
-       /* if($akun['level_user']=="admin")
+        if($akun['level_user']=="admin")
         {
-             $_SESSION['login'] = $akun;
+             $_SESSION['username'] = $username;
+             $_SESSION['password'] = $password;
              $_SESSION['level'] = $akun['level_user'];
             echo "<script>alert('anda sukses login sebagai admin');</script>";
             echo "<script>location='index.php';</script>";
@@ -112,11 +113,12 @@ if(isset($_POST["login"]))
         //jika level user = staff
           elseif($akun['level_user']=="staff")
         {
-             $_SESSION['login'] = $akun;
+             $_SESSION['username'] = $username;
+             $_SESSION['password'] = $password;
              $_SESSION['level'] = $akun['level_user'];
             echo "<script>alert('anda sukses login sebagai staff');</script>";
             echo "<script>location='index.php';</script>";
-        }*/
+        }
        
       
     }

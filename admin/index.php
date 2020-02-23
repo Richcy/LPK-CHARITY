@@ -4,13 +4,12 @@ session_start();
 include 'koneksi.php';
 
 
-/*if(!$_SESSION["login"]="admin"|| !$_SESSION["login"]="staff")
+if(!isset($_SESSION['level']))
 {
     echo"<script>alert('Anda harus login');</script>";
     echo"<script>location='login.php'</script>";
-    exit();
 }
-*/
+
 
 
 
