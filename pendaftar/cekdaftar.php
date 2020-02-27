@@ -50,7 +50,9 @@
                                     <label class="label">Nomor Induk KTP</label>
                                     <input class="input--style-4" type="text" name="nik">
                                 </div>
-                                <strong>*nama harus sesuai saat pendaftaran</strong><br>
+                                <strong>*NAMA & NOMOR INDUK KTP HARUS SESUAI SAAT PENDAFTARAN</strong><br>
+                                <br>PERHATIAN!!!<br>
+                                Jika dalam 1 x 24 jam pendaftaran anda belum dikonfirmasi oleh admin, silahkan hubungi nomer HP/WA yang ada dikontak web<br><br>
                                 <a href="daftar.php">belum mendaftar?</a><br>
                           
                         </div>

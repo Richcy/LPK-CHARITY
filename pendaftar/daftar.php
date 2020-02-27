@@ -129,7 +129,7 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Pilih Tanggal Booking</label>
+                                    <label class="label">Pilih Tanggal Booking Kursus</label>
                                     <div class="input-group-icon">
                                         <input class="input--style-4 js-datepicker" type="text" name="tanggal">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
@@ -161,7 +161,7 @@
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Nomor HP (WA)</label>
+                                    <label class="label">Nomor HP/WA (Harus Aktif)</label>
                                     <input class="input--style-4" type="text" name="hp">
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
-                        <a href="login.php">sudah mendaftar?</a>
+                        <a href="cekdaftar.php">sudah mendaftar?</a>
 
                         
                         <div class="row row-space">
@@ -329,7 +329,7 @@
                                     VALUES('$username','$nik','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir3','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
 
                                  echo "<script>alert('Terima kasih anda sudah mendaftar! Silahkan tunggu konfirmasi dari admin ke nomer WA anda')</script>";
-                                echo"<script>location='login.php';</script>";
+                                echo"<script>location='cekdaftar.php';</script>";
                             }
 
                             

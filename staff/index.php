@@ -62,6 +62,7 @@ font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger squar
                     <li> <a href="index.php?halaman=pendaftar"><i class="fa fa-dashboard fa-3x"></i> Data Pendaftar</a></li>
                     <li> <a href="index.php?halaman=transaksi"><i class="fa fa-dashboard fa-3x"></i> Data Transaksi</a></li>
                     <li> <a href="index.php?halaman=user"><i class="fa fa-dashboard fa-3x"></i> Data User</a></li>
+                     <li> <a href="index.php?halaman=murid"><i class="fa fa-dashboard fa-3x"></i> Data Murid</a></li>
                 </ul>
                
             </div>
@@ -93,9 +94,9 @@ font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger squar
                     {
                         include 'logout.php';
                     }
-                    else if($_GET ['halaman']=="detail")
+                    else if($_GET ['halaman']=="murid")
                     {
-                        include 'detail.php';
+                        include 'murid.php';
                     }
                     else if($_GET ['halaman']=="tambahuser")
                     {

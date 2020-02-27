@@ -73,19 +73,19 @@
                   <li><a href="services.html" class="nav-link">Services</a></li>
                   <li><a href="projects.html" class="nav-link">Projects</a></li>
                   <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
                   <li><a href="pendaftar/daftar.php" class="nav-link">Pendaftaran</a></li>
                   <li><a href="pendaftar/login.php" class="nav-link">Cek Pendaftaran</a></li>
                   <li><a href="login.php" class="nav-link">Login</a></li>
                 </ul>
               </nav>
-
+              <!--
               <div class="top-social ml-auto">
                 <a href="#"><span class="icon-facebook"></span></a>
                 <a href="#"><span class="icon-twitter"></span></a>
                 <a href="#"><span class="icon-linkedin"></span></a>
               </div>
+            -->
           </div>
         </div>
 

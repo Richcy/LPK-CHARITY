@@ -7,7 +7,6 @@
 			<th>Nama Pendaftar</th>
 			<th>Tanggal Booking</th>
 			<th>Foto Bukti Transfer</th>
-			<th>Aksi</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -26,10 +25,7 @@
 			</td>
 
 			<td><img src="../pendaftar/assets/img/<?php echo $pecah['bukti_transfer'] ?>" width = "500"></td>
-			<td>
-				<a href = "index.php?halaman=hapuspendaftar&id=<?php echo $pecah["id_pendaftar"];?>" class="btn btn-success">Konfirmasi</a>
-				<a href = "index.php?halaman=ubahpendaftar&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-danger">Tolak</a>
-			</td>
+		
 		</tr>
 		<?php $nomor++; ?>
 		<?php } ?>

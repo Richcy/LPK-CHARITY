@@ -102,12 +102,12 @@ if(isset($_POST["login"]))
           echo "<script>alert('anda sukses login');</script>";
             echo "<script>location='index.php';</script>";*/
         // jika level user = admin
-        if($akun['level_user']=="admin")
+        if($akun['level_user']=="owner")
         {
              $_SESSION['username'] = $username;
              $_SESSION['password'] = $password;
              $_SESSION['level'] = $akun['level_user'];
-            echo "<script>alert('anda sukses login sebagai admin');</script>";
+            echo "<script>alert('anda sukses login sebagai owner');</script>";
             echo "<script>location='admin/index.php';</script>";
         }
         //jika level user = staff
@@ -125,7 +125,7 @@ if(isset($_POST["login"]))
     else
     {
         // anda gagal login
-        echo "<script>alert('anda gagal login, periksa akun anda!');</script>";
+        echo "<script>alert('anda gagal login');</script>";
         echo "<script>location='login.php';</script>";
     }
 }

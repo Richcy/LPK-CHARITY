@@ -4,12 +4,13 @@ session_start();
 include 'koneksi.php';
 
 
-if(!isset($_SESSION['admin']))
+if(!isset($_SESSION['level']))
 {
     echo"<script>alert('Anda harus login');</script>";
     echo"<script>location='login.php'</script>";
-    exit();
 }
+
+
 
 
 
@@ -19,8 +20,8 @@ if(!isset($_SESSION['admin']))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
-	<!-- BOOTSTRAP STYLES-->
+            <title>Halaman Owner</title>
+    <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
@@ -41,28 +42,27 @@ if(!isset($_SESSION['admin']))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Binary admin</a> 
+                        <a class="navbar-brand" href="index.html">Halaman Owner</a>
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-				<li class="text-center">
+                <li class="text-center">
                     <img src="assets/img/find_user.png" class="user-image img-responsive"/>
-					</li>
-				
-					
+                    </li>
+                
+                    
                     <li> <a href="index.php"><i class="fa fa-dashboard fa-3x"></i> Home</a></li>
-                    <li> <a href="index.php?halaman=produk"><i class="fa fa-dashboard fa-3x"></i> Produk</a></li>
-                    <li> <a href="index.php?halaman=pembelian"><i class="fa fa-dashboard fa-3x"></i> Pembelian</a></li>
-                    <li> <a href="index.php?halaman=pelanggan"><i class="fa fa-dashboard fa-3x"></i> Pelanggan</a></li>
-                    <li> <a href="index.php?halaman=logout"><i class="fa fa-dashboard fa-3x"></i> Logout</a></li>
-                     
+                    <li> <a href="index.php?halaman=pendaftar"><i class="fa fa-dashboard fa-3x"></i> Data Pendaftar</a></li>
+                    <li> <a href="index.php?halaman=transaksi"><i class="fa fa-dashboard fa-3x"></i> Data Transaksi</a></li>
+                    <li> <a href="index.php?halaman=user"><i class="fa fa-dashboard fa-3x"></i> Data User</a></li>
+                    <li> <a href="index.php?halaman=murid"><i class="fa fa-dashboard fa-3x"></i> Data Murid</a></li>
                 </ul>
                
             </div>
@@ -74,17 +74,21 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
               <?php 
               if (isset($_GET['halaman']))
                 {
-                    if($_GET['halaman']=="produk")
+                    if($_GET['halaman']=="pendaftar")
                     {
-                        include 'produk.php';
+                        include 'pendaftar.php';
                     }
-                    else if($_GET['halaman']=="pembelian")
+                    else if($_GET['halaman']=="transaksi")
                     {
-                        include 'pembelian.php';
+                        include 'transaksi.php';
                     }
-                    else if($_GET['halaman']=="pelanggan")
+                     else if($_GET['halaman']=="user")
                     {
-                        include 'pelanggan.php';
+                        include 'user.php';
+                    }
+                    else if($_GET['halaman']=="murid")
+                    {
+                        include 'murid.php';
                     }
                     else if($_GET['halaman']=="logout")
                     {
@@ -94,17 +98,37 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                     {
                         include 'detail.php';
                     }
-                    else if($_GET ['halaman']=="tambahproduk")
+                    else if($_GET ['halaman']=="tambahuser")
                     {
-                        include 'tambahproduk.php';
+                        include 'tambahuser.php';
                     }
-                    else if($_GET ['halaman']=="hapusproduk")
+                    else if($_GET ['halaman']=="konfirmasipendaftar")
                     {
-                        include 'hapusproduk.php';
+                        include 'konfirmasipendaftar.php';
                     }
-                    else if($_GET ['halaman']=="ubahproduk")
+                    else if($_GET ['halaman']=="hapuspendaftar")
                     {
-                        include 'ubahproduk.php';
+                        include 'hapuspendaftar.php';
+                    }
+                    else if($_GET ['halaman']=="ubahpendaftar")
+                    {
+                        include 'ubahpendaftar.php';
+                    }
+                        else if($_GET ['halaman']=="hapususer")
+                    {
+                        include 'hapususer.php';
+                    }
+                    else if($_GET ['halaman']=="ubahuser")
+                    {
+                        include 'ubahuser.php';
+                    }
+                    else if($_GET ['halaman']=="hapusmurid")
+                    {
+                        include 'hapusmurid.php';
+                    }
+                    else if($_GET ['halaman']=="ubahmurid")
+                    {
+                        include 'ubahmurid.php';
                     }
                     else if ($_GET['halaman']=="logout")
                     {
