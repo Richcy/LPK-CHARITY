@@ -108,7 +108,7 @@ if(isset($_POST["login"]))
              $_SESSION['password'] = $password;
              $_SESSION['level'] = $akun['level_user'];
             echo "<script>alert('anda sukses login sebagai owner');</script>";
-            echo "<script>location='admin/index.php';</script>";
+            echo "<script>location='owner/index.php';</script>";
         }
         //jika level user = staff
           elseif($akun['level_user']=="staff")

@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>LPK CHARITY &mdash; Website Template by Colorlib</title>
+    <title>Halaman Utama &mdash; LKP CHARITY</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -39,72 +39,26 @@
 
 
 
-      <header class="site-navbar site-navbar-target" role="banner">
+     
+    <!--header-->
+      <?php 
+      include 'header.php';
+      ?>
 
-        <div class="container mb-3">
-          <div class="d-flex align-items-center">
-            <div class="site-logo mr-auto">
-              <a href="index.html">LPK CHARITY<span class="text-primary">.</span></a>
-            </div>
-            <div class="site-quick-contact d-none d-lg-flex ml-auto ">
-              <div class="d-flex site-info align-items-center mr-5">
-                <span class="block-icon mr-3"><span class="icon-map-marker"></span></span>
-                <span>Margahayu, Bandung, <br> Indonesia</span>
-              </div>
-              <div class="d-flex site-info align-items-center">
-                <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
-                <span>Senin - Jum'at 8:00 - 16:00 <br> Hari Libur TUTUP</span>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
-        <div class="container">
-          <div class="menu-wrap d-flex align-items-center">
-            <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
-
-              
-
-              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="projects.html" class="nav-link">Projects</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
-                  <li><a href="pendaftar/daftar.php" class="nav-link">Pendaftaran</a></li>
-                  <li><a href="pendaftar/login.php" class="nav-link">Cek Pendaftaran</a></li>
-                  <li><a href="login.php" class="nav-link">Login</a></li>
-                </ul>
-              </nav>
-              <!--
-              <div class="top-social ml-auto">
-                <a href="#"><span class="icon-facebook"></span></a>
-                <a href="#"><span class="icon-twitter"></span></a>
-                <a href="#"><span class="icon-linkedin"></span></a>
-              </div>
-            -->
-          </div>
-        </div>
-
-       
-
-      </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/background.jpeg')">
         <div class="container">
           <div class="row align-items-center ">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">Digital Agency with Excellent Services.</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
-              <p class="mt-5"><a href="#" class="btn btn-primary">About Us</a></p>
+              <h1 class="mb-3">LEMBAGA KURSUS DAN PELATIHAN KERJA CHARITY</h1>
+              <p>Lembaga Yang Sudah Terakreditasi:<br>1. Akreditasi B Nomer SK 167/BAN PAUD DAN PNF/AKR/2019<br>2. Terakreditasi Nomer SK 184/LA-LPK/1/2019</p>
+              <p>Kami menerima kursus Massage Traditional, Thailand Massage, SPA secara privat dengan biaya yang terjangkau dan menjadikan Anda Terapis yang kompeten dan mudah menghasilkan uang.<br>BONUS!!!!! Bagi Anda yang bergabung sekarang, <strong>GRATIS PENGISIAN TENAGA DALAM DAN KONSULTASI SEUMUR HIDUP DENGAN KAMI</strong></p>
+              <p class="mt-5"><a href="about.php" class="btn btn-primary">TENTANG KAMI</a></p>
             </div>
             <div class="col-md-6 ml-auto">
               <div class="white-dots">
-                <img src="images/img_2.jpg" alt="" class="img-fluid">
+                <img src="images/1.jpeg" alt="" class="img-fluid">
               </div>
             </div>
           </div>
@@ -116,8 +70,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-7 mb-5">
-            <h5 class="subtitle">Features</h5>
-            <h2>A creative digital agency with excellence services</h2>
+            <h5 class="subtitle">LAYANAN DAN FASILITAS KURSUS</h5>
+            <h2>KAMI MENYEDIAKAN JASA PRIVAT</h2>
           </div>
         </div>
         <div class="row">
@@ -126,8 +80,9 @@
               <span class="wrap-icon">
                 <span class="icon-home"></span>
               </span>
-              <h3>Recusandae Cumque</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+              <h3>MASSAGE TRADITIONAL</h3>
+              <p>Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong ,punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
+              <p>Harga : Rp. 1.500.000 Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p>Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p>HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -135,8 +90,9 @@
               <span class="wrap-icon">
                 <span class="icon-face"></span>
               </span>
-              <h3>Voluptas Ullam</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+              <h3>THAILAND MASSAGE</h3>
+              <p>Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong ,punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
+              <p>Harga : Rp. 1.500.000 Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p>Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p>HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -144,14 +100,15 @@
               <span class="wrap-icon">
                 <span class="icon-drafts"></span>
               </span>
-              <h3>Reiciendis Dolorum Minu</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+              <h3>SPA</h3>
+              <p>Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong ,punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
+              <p>Harga : Rp. 1.500.000 Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p>Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p>HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
             </div>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-lg-12 text-center">
-            <a href="#" class="btn btn-primary">View All Services</a>
+            <a href="services.php" class="btn btn-primary">Lihat Semua Servis</a>
           </div>
         </div>
       </div>
@@ -416,7 +373,7 @@
 
     
     
-    <div class="site-section bg-light">
+    <div class="site-section bg-light" id="testimoni">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
@@ -477,7 +434,7 @@
       </div>
     </div>
 
-
+<!--
     <div class="site-section bg-white">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
@@ -535,67 +492,12 @@
       </div>
     </div>
 
-
+    -->
     
 
     
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h2 class="footer-heading mb-3">About Us</h2>
-                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-
-                <h2 class="footer-heading mb-4">Newsletter</h2>
-                <form action="#" class="d-flex" class="subscribe">
-                  <input type="text" class="form-control mr-3" placeholder="Email">
-                  <input type="submit" value="Send" class="btn btn-primary">
-                </form>
-          </div>
-          <div class="col-lg-8 ml-auto">
-            <div class="row">
-              <div class="col-lg-4 ml-auto">
-                <h2 class="footer-heading mb-4">Navigation</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-4">
-                <h2 class="footer-heading mb-4">Navigation</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-                
-              </div>
-
-              
-              
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
+    <!--footer-->
+ <?php include 'footer.php';?>
 
     </div>
 
