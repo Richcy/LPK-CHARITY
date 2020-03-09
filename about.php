@@ -231,8 +231,7 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <p class="lead text-white">Suscipit libero voluptate</p>
-            <h2 class="text-white">Get ready to start your exciting journey. Our agency</h2>
+            <h2 class="text-white">SEGERA DAFTAR SEKARANG JUGA DENGAN MENGISI FORM PENDAFTARAN SEBELUM HARGA MENJADI HARGA NORMAL- HUBUNGI TELP/WA : 081322724727 </h2>
           </div>
         </div>
         

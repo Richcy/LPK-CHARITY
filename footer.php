@@ -2,14 +2,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <h2 class="footer-heading mb-3">About Us</h2>
-                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            <h2 class="footer-heading mb-3">Tentang Kami</h2>
+                <p class="mb-5">LEMBAGA KURSUS DAN PELATIHAN KERJA CHARITY
+              <p>Lembaga Yang Sudah Terakreditasi:<br>1. Akreditasi B Nomer SK 167/BAN PAUD DAN PNF/AKR/2019<br>2. Terakreditasi Nomer SK 184/LA-LPK/1/2019</p>
+              <p style="text-align: justify;">Kami menerima siswa pria dan wanita minimal usia 16 tahun untuk mengikuti KURSUS PRIVAT Massage Traditional, Thailand Massage, SPA  dengan biaya yang terjangkau dan menjadikan Anda Terapis yang kompeten dan mudah menghasilkan uang.<br>BONUS!!!!! Bagi Anda yang bergabung sekarang, <strong>GRATIS PENGISIAN TENAGA DALAM DAN KONSULTASI SEUMUR HIDUP DENGAN KAMI.</strong></p> </p>
 
-                <h2 class="footer-heading mb-4">Newsletter</h2>
-                <form action="#" class="d-flex" class="subscribe">
-                  <input type="text" class="form-control mr-3" placeholder="Email">
-                  <input type="submit" value="Send" class="btn btn-primary">
-                </form>
+                <p class="mb-5">Hubungi Telp/WA : 081322724727</p>
+                
           </div>
           <div class="col-lg-8 ml-auto">
             <div class="row">
@@ -21,6 +20,7 @@
                   <li><a href="service.php">Servis</a></li>
                   <li><a href="project.php">Projek</a></li>
                   <li><a href="contact.php">Kontak</a></li>
+                  <li><a href="login.php">Login</a></li>
                 </ul>
               </div>
               <!--<div class="col-lg-4">

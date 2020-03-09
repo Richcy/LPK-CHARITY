@@ -23,6 +23,24 @@
 
   </head>
 
+  <style>
+    
+    #play {
+
+      text-align: justify;
+      color: black;
+      font-size: 20px;
+    }
+
+    #pfas {
+
+      color: black;
+      font-size: 20px;
+    }
+
+
+  </style>
+
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
     
@@ -53,7 +71,7 @@
             <div class="col-md-5 mt-5 pt-5">
               <h1 class="mb-3">LEMBAGA KURSUS DAN PELATIHAN KERJA CHARITY</h1>
               <p>Lembaga Yang Sudah Terakreditasi:<br>1. Akreditasi B Nomer SK 167/BAN PAUD DAN PNF/AKR/2019<br>2. Terakreditasi Nomer SK 184/LA-LPK/1/2019</p>
-              <p>Kami menerima kursus Massage Traditional, Thailand Massage, SPA secara privat dengan biaya yang terjangkau dan menjadikan Anda Terapis yang kompeten dan mudah menghasilkan uang.<br>BONUS!!!!! Bagi Anda yang bergabung sekarang, <strong>GRATIS PENGISIAN TENAGA DALAM DAN KONSULTASI SEUMUR HIDUP DENGAN KAMI</strong></p>
+              <p style="text-align: justify;">Kami menerima siswa pria dan wanita minimal usia 16 tahun untuk mengikuti KURSUS PRIVAT Massage Traditional, Thailand Massage, SPA  dengan biaya yang terjangkau dan menjadikan Anda Terapis yang kompeten dan mudah menghasilkan uang.<br>BONUS!!!!! Bagi Anda yang bergabung sekarang, <strong>GRATIS PENGISIAN TENAGA DALAM DAN KONSULTASI SEUMUR HIDUP DENGAN KAMI.</strong></p>
               <p class="mt-5"><a href="about.php" class="btn btn-primary">TENTANG KAMI</a></p>
             </div>
             <div class="col-md-6 ml-auto">
@@ -70,39 +88,39 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-7 mb-5">
-            <h5 class="subtitle">LAYANAN DAN FASILITAS KURSUS</h5>
+            <h3>LAYANAN JASA KAMI</h3>
             <h2>KAMI MENYEDIAKAN JASA PRIVAT</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
             <div class="feature-1">
               <span class="wrap-icon">
-                <span class="icon-home"></span>
+                <span class="icon-drafts"></span>
               </span>
-              <h3>MASSAGE TRADITIONAL</h3>
-              <p>Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong ,punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
-              <p>Harga : Rp. 1.500.000 Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p>Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p>HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
+              <h3>MASSAGE TRADITIONAL/THAILAND MASSAGE</h3>
+              <p id="play">Anda akan dibimbing langsung oleh instruktur tentang Pijat Tradisional/Thailand Massage mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh </p>
+              <p id="play">Harga : <strike>Rp. 1.500.000</strike> Rp. 1.000.000<br>DP Rp. 200.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p id="pfas">Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p id="play">HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+        <!--  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="feature-1">
               <span class="wrap-icon">
                 <span class="icon-face"></span>
               </span>
               <h3>THAILAND MASSAGE</h3>
-              <p>Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong ,punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
-              <p>Harga : Rp. 1.500.000 Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p>Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p>HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
+               <p id="play">Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong, punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
+              <p id="play">Harga : <strike>Rp. 1.500.000</strike> Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p id="pfas">Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p id="play">HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          </div>-->
+          <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
             <div class="feature-1">
               <span class="wrap-icon">
-                <span class="icon-drafts"></span>
+                <span class="icon-spa"></span>
               </span>
               <h3>SPA</h3>
-              <p>Anda akan dibimbing langsung oleh instruktur tentang pijat tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh mulai dari tubuh bagian belakang (telapak kaki, betis, paha, bokong ,punggung, leher) dan tubuh bagian depan (telapak kaki, betis, paha, perut, dada, tangan, wajah, kepala)</p>
-              <p>Harga : Rp. 1.500.000 Rp. 1.000.000<br>DP Rp. 100.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p>Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p>HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
+              <p id="play">Anda akan dibimbing langsung oleh instruktur tentang Pijat Tradisional mulai dari pemanasan sebelum pijat dan praktek pijat seluruh tubuh , praktek Lulur Modern dan Lulur Tradisional, praktek Masker Badan / Boreh Bali, praktek Totok Wajah dan Facial (tanpa alat)</p>
+              <p id="play">Harga : <strike>Rp. 2.500.000</strike> Rp. 1.500.000<br>DP Rp. 200.000 dan sisanya dapat dibayar di LKP CHARITY saat kursus dimulai</p><p id="pfas">Fasilitas :<br> 1. Dibimbing oleh 1 orang Instruktur <br>2. Sertifikat <br>3. Waktu kursus 2 hari (bebas pilih hari) <br>4. Alat, bahan, model disediakan <br>5. Bagi peserta Luar Kota GRATIS menginap<br>6. GRATIS PENGISIAN TENAGA DALAM seharga Rp. 1.000.000<br>7. Gratis konsultasi seumur hidup</p><p id="play">HARGA TIDAK TERMASUK KONSUMSI DAN KEPERLUAN PRIBADI</p>
             </div>
           </div>
         </div>
@@ -117,7 +135,7 @@
 
 
 
-    <div class="site-section bg-light">
+<!--    <div class="site-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -181,19 +199,19 @@
         </div>
       </div>
     </div>
+  -->
 
-    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
+   <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <p class="lead text-white">Suscipit libero voluptate</p>
-            <h2 class="text-white">Get ready to start your exciting journey. Our agency</h2>
+            <h2 class="text-white">SEGERA DAFTAR SEKARANG JUGA DENGAN MENGISI FORM PENDAFTARAN SEBELUM HARGA MENJADI HARGA NORMAL- HUBUNGI TELP/WA : 081322724727 </h2>
           </div>
         </div>
         
       </div>
     </div>
-
+<!--
     <div class="site-section counter-wrap">
       <div class="container">
         <div class="row">
@@ -227,15 +245,14 @@
         </div>
       </div>
     </div>
-
+-->
 
 
     <div class="site-section bg-light">
       <div class="container">
         <div class="row justify-content-center  mb-5">
           <div class="col-md-7 text-center">
-            <h3 class="section-heading text-center">News &amp; Events</h3>
-            <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+            <h3 class="section-heading text-center">FOTO KEGIATAN</h3>
 
           </div>
 
@@ -244,41 +261,150 @@
           <div class="col-12">
 
             <div class="nonloop-block-13 owl-carousel">
-              <div class="news-1" style="background-image: url('images/img_1.jpg');">
+              <div class="news-1" style="background-image: url('images/2.jpeg');">
                 <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
+                  <h3>Praktek Massage Traditional</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
                   <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
                 </div>
               </div>
 
-              <div class="news-1" style="background-image: url('images/img_2.jpg');">
+             <div class="news-1" style="background-image: url('images/3.jpeg');">
                 <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
+                  <h3>Uji Kompetensi Bidang SPA</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
                   <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
                 </div>
               </div>
 
-              <div class="news-1" style="background-image: url('images/img_3.jpg');">
+             <div class="news-1" style="background-image: url('images/4.jpeg');">
                 <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
+                  <h3>Praktek Pengisian Tenaga Dalam</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
                   <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
                 </div>
               </div>
 
-              <div class="news-1" style="background-image: url('images/img_3.jpg');">
+              <div class="news-1" style="background-image: url('images/5.jpeg');">
                 <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
+                  <h3>Uji Kompetensi Bidang SPA</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
                   <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
                 </div>
               </div>
+
+              <div class="news-1" style="background-image: url('images/6.jpeg');">
+                <div class="text">
+                  <h3>Praktek Totok Wajah</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/7.jpeg');">
+                <div class="text">
+                  <h3>Praktek Thailand Massage</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/8.jpeg');">
+                <div class="text">
+                  <h3>Praktek Massage Traditional</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/9.jpeg');">
+                <div class="text">
+                  <h3>Pembagian Sertifikat</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/10.jpeg');">
+                <div class="text">
+                  <h3>Uji Kompetensi Bidang SPA</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/11.jpeg');">
+                <div class="text">
+                  <h3>Praktek Massage Traditional</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/12.jpeg');">
+                <div class="text">
+                  <h3>Praktek Lulur</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/13.jpeg');">
+                <div class="text">
+                  <h3>Praktek Massage Traditional</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/14.jpeg');">
+                <div class="text">
+                  <h3>Pembagian Sertifikat</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/15.jpeg');">
+                <div class="text">
+                  <h3>Praktek Massage Traditional</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/16.jpeg');">
+                <div class="text">
+                  <h3>Praktek Facial Tanpa Alat</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
+              <div class="news-1" style="background-image: url('images/17.jpeg');">
+                <div class="text">
+                  <h3>Seminar Dengan Pemerintah dan DPP HIPKI Nasional</h3>
+                  <!--<span class="category d-block mb-3">Web Development</span>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>-->
+                </div>
+              </div>
+
             </div>
             
           </div>
@@ -293,79 +419,215 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center">More Services</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.</p>
+            <h2 class="text-white section-heading primary-color-icon text-center">PIHAK - PIHAK YANG SUDAH BEKERJA SAMA DENGAN KAMI</h2>
+          
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-attach_money"></span>
-              </span>
+              <h1 style="color: white;">1</h1>
               <div class="service-1-contents">
-                <h3>Consectetur Adipisicing Elit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Direktorat Jendral Pembinaan Pelatihan Dan Produktivitas Balai Besar Pengembangan Latihan Kerja Bandung Kementerian Ketenagakerjaan Republik Indonesia</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
-              <span class="service-1-icon">
+              <!--<span class="service-1-icon">
                 <span class="icon-build"></span>
-              </span>
+              </span>-->
+              <h1 style="color: white;">2</h1>
               <div class="service-1-contents">
-                <h3>Obcaecati Laboriosam</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Direktorat Jendral Pembinaan Pelatihan Dan Produktivitas Kementerian Ketenagakerjaan Republik Indonesia</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
-              <span class="service-1-icon">
+              <!--<span class="service-1-icon">
                 <span class="icon-photo_camera"></span>
-              </span>
+              </span>-->
+              <h1 style="color: white;">3</h1>
               <div class="service-1-contents">
-                <h3>Nostrum Suscipit Nobis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Dinas Tenaga Kerja Dan Transmigrasi Provinsi Jawa Barat</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
-              <span class="service-1-icon">
+              <!--<span class="service-1-icon">
                 <span class="icon-redeem"></span>
-              </span>
+              </span>-->
+              <h1 style="color: white;">4</h1>
               <div class="service-1-contents">
-                <h3>Harum Molestiae Optio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Dinas Tenaga Kerja Kabupaten Bandung Barat</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
-              <span class="service-1-icon">
+              <!--<span class="service-1-icon">
                 <span class="icon-phonelink"></span>
-              </span>
+              </span>-->
+              <h1 style="color: white;">5</h1>
               <div class="service-1-contents">
-                <h3>Nostrum Suscipit Nobis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Direktorat Jendral Pendidikan Anak Usia Dini Dan Pendidikan Masyarakat Kementerian Pendidikan Dan Kebudayaan Republik Indonesia</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="service-1">
-              <span class="service-1-icon">
+              <!--<span class="service-1-icon">
                 <span class="icon-child_friendly"></span>
-              </span>
+              </span>-->
+              <h1 style="color: white;">6</h1>
               <div class="service-1-contents">
-                <h3>Eaque Odit Molestias</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <h3>Dinas Pendidikan Provinsi Jawa Barat</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
               </div>
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">7</h1>
+              <div class="service-1-contents">
+                <h3>Dinas Pendidikan Kabupaten Bandung Barat</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">8</h1>
+              <div class="service-1-contents">
+                <h3>Balai Pelatihan Pendidik Dan Tenaga Kependidikan PLB Dinas Pendidikan Provinsi Jawa Barat </h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">9</h1>
+              <div class="service-1-contents">
+                <h3>Lembaga Sertifikasi Profesi SPA Nasional</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">10</h1>
+              <div class="service-1-contents">
+                <h3>Lembaga Sertifikasi Kompetensi SPA</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">11</h1>
+              <div class="service-1-contents">
+                <h3>CV. Usaha Bersama Partner Bisnis GO MASSAGE</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">12</h1>
+              <div class="service-1-contents">
+                <h3>Desa & Kecamatan Di Kabupaten Bandung Barat</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">13</h1>
+              <div class="service-1-contents">
+                <h3>Himpunan Penyelenggara Pelatihan Dan Kursus Indonesia (HIPKI)</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">14</h1>
+              <div class="service-1-contents">
+                <h3>Himpunan Lembaga Latihan Seluruh Indonesia (HILLSI)</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">15</h1>
+              <div class="service-1-contents">
+                <h3>Asosiasi Instruktur Seluruh Indonesia (AISI)</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-1">
+              <!--<span class="service-1-icon">
+                <span class="icon-child_friendly"></span>
+              </span>-->
+              <h1 style="color: white;">16</h1>
+              <div class="service-1-contents">
+                <h3>Himpunan Seluruh Pendidik & Penguji Indonesia (HISPPI)</h3>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+              </div>
+            </div>
+          </div>
+
+
+          
         </div>
       </div>
     </div>
@@ -377,8 +639,7 @@
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
-            <h2 class="section-heading text-center">Our Top Client Says</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+            <h2 class="section-heading text-center">TESTIMONI</h2>
           </div>
         </div>
         <div class="row">
@@ -426,9 +687,9 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center">Quality Services</h2>
-            <p class="lead text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.</p>
-            <p><a href="#" class="btn btn-primary">Contact Us Now</a></p>
+            <h2 class="text-white section-heading primary-color-icon text-center">AYO DAFTAR SEKARANG JUGA</h2>
+            <p class="lead text-white mb-5">Untuk informasi lebih lanjut hubungi Telp/WA : 081322724727</p>
+            <p><a href="#" class="btn btn-primary">Hubungi Kami</a></p>
           </div>
         </div>
       </div>

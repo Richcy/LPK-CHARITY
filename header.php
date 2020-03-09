@@ -32,7 +32,6 @@
                   <li><a href="contact.php" class="nav-link">Kontak</a></li>
                   <li><a href="pendaftar/daftar.php" class="nav-link">Pendaftaran</a></li>
                   <li><a href="pendaftar/cekdaftar.php" class="nav-link">Cek Pendaftaran</a></li>
-                  <li><a href="login.php" class="nav-link">Login</a></li>
                 </ul>
               </nav>
               <!--
