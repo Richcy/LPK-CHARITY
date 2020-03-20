@@ -6,6 +6,7 @@
 			<th>No</th>
 			<th>Nama Pendaftar</th>
 			<th>Tanggal Booking</th>
+			<th>Jenis Kursus</th>
 			<th>Foto Bukti Transfer</th>
 			<th>Aksi</th>
 		</tr>
@@ -24,7 +25,7 @@
 					echo $tanggal;
 				?>
 			</td>
-
+			<td><?php echo $pecah['jenis_kursus'];?></td>
 			<td><img src="../pendaftar/assets/img/<?php echo $pecah['bukti_transfer'] ?>" width = "500"></td>
 			<td>
 				<a href = "index.php?halaman=konfirmasipendaftar&id=<?php echo $pecah["id_pendaftar"];?>" class="btn btn-success">Konfirmasi</a>

@@ -7,7 +7,7 @@ include 'koneksi.php';
 if(!isset($_SESSION['level']))
 {
     echo"<script>alert('Anda harus login');</script>";
-    echo"<script>location='login.php'</script>";
+    echo"<script>location='../login.php'</script>";
 }
 
 

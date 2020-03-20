@@ -52,9 +52,9 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">About Us</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+              <h1 class="mb-3">LEMBAGA KURSUS DAN PELATIHAN KERJA CHARITY</h1>
+              <p>Lembaga Yang Sudah Terakreditasi:<br>1. Akreditasi B Nomer SK 167/BAN PAUD DAN PNF/AKR/2019<br>2. Terakreditasi Nomer SK 184/LA-LPK/1/2019</p>
+              <p style="text-align: justify;">Kami menerima siswa pria dan wanita minimal usia 16 tahun untuk mengikuti KURSUS PRIVAT Massage Traditional, Thailand Massage, SPA  dengan biaya yang terjangkau dan menjadikan Anda Terapis yang kompeten dan mudah menghasilkan uang.<br>BONUS!!!!! Bagi Anda yang bergabung sekarang, <strong>GRATIS PENGISIAN TENAGA DALAM DAN KONSULTASI SEUMUR HIDUP DENGAN KAMI.</strong></p>
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@
         
       </div>
     </div>
-
+<!--
     <div class="site-section counter-wrap">
       <div class="container">
         <div class="row">
@@ -271,7 +271,7 @@
         </div>
       </div>
     </div>
-
+-->
  <!--footer-->
  <?php include 'footer.php';?>
     </div>

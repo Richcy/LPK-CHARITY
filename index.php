@@ -37,6 +37,12 @@
       color: black;
       font-size: 20px;
     }
+    
+    .news-1 {
+
+      background-size: 100% 80%;
+      background-repeat: no-repeat;
+    }
 
 
   </style>
@@ -270,7 +276,7 @@
                 </div>
               </div>
 
-             <div class="news-1" style="background-image: url('images/3.jpeg');">
+             <div class="news-1" style="background-image: url('images/3.jpeg'); width: : 100%;">
                 <div class="text">
                   <h3>Uji Kompetensi Bidang SPA</h3>
                   <!--<span class="category d-block mb-3">Web Development</span>

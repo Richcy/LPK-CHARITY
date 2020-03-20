@@ -7,6 +7,7 @@
 			<th>Nama Lengkap</th>
 			<th>NIK</th>
 			<th>Jadwal</th>
+			<th>Jenis Kursus</th>
 			<th>Tempat Lahir</th>
 			<th>Tanggal Lahir</th>
 			<th>Jenis Kelamin</th>
@@ -26,6 +27,7 @@
 			<td><?php echo $pecah['username_murid']; ?></td>
 			<td><?php echo $pecah['nik_murid']; ?></td>
 			<td><?php echo $pecah['jadwal_murid'];?></td>
+			<td><?php echo $pecah['jenis_kursus'];?></td>
 			<td><?php echo $pecah['tempat_lahir_murid'];?></td>
 			<td><?php echo $pecah['tanggal_lahir_murid'];?></td>
 			<td><?php echo $pecah['jenis_kelamin_murid'];?></td>

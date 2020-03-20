@@ -137,6 +137,20 @@
                                 </div>
                             </div>
                             <div class="col-2">
+                                   <div class="rs-select2 js-select-simple select--no-search">
+                                    <label class="label">Pilih Jenis Kursus</label>
+                                        <select name="jenis_kursus">
+                                            <option disabled="disabled" selected="selected">Jenis Kursus</option>
+                                            <option value="Massage Traditional">Massage Traditional</option>
+                                            <option value="Thailand Massage">Thailand Massage</option>
+                                            <option value="SPA">SPA</option>
+                                        </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Jenis Kelamin</label>
                                     <div class="p-t-10">
@@ -151,20 +165,16 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Nomor HP/WA (Harus Aktif)</label>
+                                    <label class="label">Nomor HP/WA (Wajib Aktif)</label>
                                     <input class="input--style-4" type="text" name="hp">
                                 </div>
                             </div>
+                        </div>
+                          <div class="input-group">
+                            <label class="label">E-mail</label>
+                            <input class="input--style-4" type="email" name="email">
                         </div>
                         <div class="input-group">
                             <label class="label">Alamat KTP</label>
@@ -175,7 +185,7 @@
                             <input class="input--style-4" type="text" name="alamat_domisili">
                         </div>
                         <div class="input-group">
-                            <label class="label">Bukti Transfer</label>
+                            <label class="label">Bukti Transfer*</label>
                             <input class="input" type="file" name="bukti_transfer">
                         </div>
                         <div class="input-group">
@@ -192,6 +202,7 @@
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
+                        <p><strong>* = Untuk bukti transfer, Silahkan cantumkan foto resi transfer yang anda transferkan ke nomor rekening xxxxxxxxx atas nama xxxxxxx</strong></p><br>
                         <a href="cekdaftar.php">sudah mendaftar?</a>
 
                         
@@ -262,6 +273,7 @@
                             if (isset($_POST['jenis_kelamin'])) {
                                 $_POST['jenis_kelamin'];
                             }
+                            $jenis_kursus = $_POST["jenis_kursus"];
                             $jenis_kelamin = $_POST["jenis_kelamin"];
                             $email = $_POST["email"];
                             $hp = $_POST["hp"];
@@ -324,9 +336,8 @@
                                 //query insert ke tabel pendaftar
 
                                 $koneksi->query("INSERT INTO pendaftar
-                                    (username_pendaftar,nik_pendaftar,tanggal_booking,tanggal_daftar,
-                                    tempat_lahir_pendaftar,tanggal_lahir_pendaftar,jenis_kelamin_pendaftar,alamat_ktp_pendaftar,alamat_domisili_pendaftar,pendidikan_akhir_pendaftar,email_pendaftar,bukti_transfer,hp_pendaftar)
-                                    VALUES('$username','$nik','$tanggal3','$tanggal_daftar','$tempat_lahir','$tanggal_lahir3','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
+                                    (username_pendaftar,nik_pendaftar,tanggal_booking,tanggal_daftar,jenis_kursus,tempat_lahir_pendaftar,tanggal_lahir_pendaftar,jenis_kelamin_pendaftar,alamat_ktp_pendaftar,alamat_domisili_pendaftar,pendidikan_akhir_pendaftar,email_pendaftar,bukti_transfer,hp_pendaftar)
+                                    VALUES('$username','$nik','$tanggal3','$tanggal_daftar','$jenis_kursus','$tempat_lahir','$tanggal_lahir3','$jenis_kelamin','$alamat_ktp','$alamat_domisili','$pendidikan_akhir','$email','$bukti_transfer','$hp') ");
 
                                  echo "<script>alert('Terima kasih anda sudah mendaftar! Silahkan tunggu konfirmasi dari admin ke nomer WA anda')</script>";
                                 echo"<script>location='cekdaftar.php';</script>";
