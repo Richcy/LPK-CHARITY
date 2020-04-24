@@ -1,4 +1,4 @@
-<h2>Data Transaksi</h2>
+<h2>Data Pembayaran</h2>
 
 <table class = "table table-bordered">
 	<thead>

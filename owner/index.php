@@ -60,7 +60,7 @@ font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger squar
                     
                     <li> <a href="index.php"><i class="fa fa-dashboard fa-3x"></i> Home</a></li>
                     <li> <a href="index.php?halaman=pendaftar"><i class="fa fa-dashboard fa-3x"></i> Data Pendaftar</a></li>
-                    <li> <a href="index.php?halaman=transaksi"><i class="fa fa-dashboard fa-3x"></i> Data Transaksi</a></li>
+                    <li> <a href="index.php?halaman=pembayaran"><i class="fa fa-dashboard fa-3x"></i> Data Pembayaran</a></li>
                     <li> <a href="index.php?halaman=user"><i class="fa fa-dashboard fa-3x"></i> Data User</a></li>
                     <li> <a href="index.php?halaman=murid"><i class="fa fa-dashboard fa-3x"></i> Data Murid</a></li>
                 </ul>
@@ -78,9 +78,9 @@ font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger squar
                     {
                         include 'pendaftar.php';
                     }
-                    else if($_GET['halaman']=="transaksi")
+                    else if($_GET['halaman']=="pembayaran")
                     {
-                        include 'transaksi.php';
+                        include 'pembayaran.php';
                     }
                      else if($_GET['halaman']=="user")
                     {
@@ -113,6 +113,10 @@ font-size: 16px;"><a href="index.php?halaman=logout" class="btn btn-danger squar
                     else if($_GET ['halaman']=="ubahpendaftar")
                     {
                         include 'ubahpendaftar.php';
+                    }
+                    else if($_GET ['halaman']=="hapuspembayaran")
+                    {
+                        include 'hapuspembayaran.php';
                     }
                         else if($_GET ['halaman']=="hapususer")
                     {

@@ -40,7 +40,6 @@
 			<td><?php echo $pecah['hp_pendaftar'];?></td>
 			<td>
 				<a href = "index.php?halaman=hapuspendaftar&id=<?php echo $pecah["id_pendaftar"];?>" class="btn-danger btn">Hapus</a>
-				<a href = "index.php?halaman=ubahpendaftar&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-warning">Ubah</a>
 			</td>
 		</tr>
 		<?php $nomor++; ?>

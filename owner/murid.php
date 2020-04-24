@@ -11,7 +11,7 @@
 			<th>Tempat Lahir</th>
 			<th>Tanggal Lahir</th>
 			<th>Jenis Kelamin</th>
-			<th>Alamat</th>
+			<th>Alamat Domisili</th>
 			<th>Email</th>
 			<th>No HP</th>
 			<th>Status</th>

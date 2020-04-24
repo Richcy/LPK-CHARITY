@@ -1,4 +1,4 @@
-<h2>Data Transaksi</h2>
+<h2>Data Pembayaran</h2>
 <div class="table-responsive">
 <table class = "table table-bordered">
 	<thead>
@@ -28,8 +28,9 @@
 			<td><?php echo $pecah['jenis_kursus'];?></td>
 			<td><img src="../pendaftar/assets/img/<?php echo $pecah['bukti_transfer'] ?>" width = "500"></td>
 			<td>
+				<a href = "index.php?halaman=ubahpendaftar&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-warning">Ubah</a>
 				<a href = "index.php?halaman=konfirmasipendaftar&id=<?php echo $pecah["id_pendaftar"];?>" class="btn btn-success">Konfirmasi</a>
-				<a href = "index.php?halaman=hapuspendaftar&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-danger">Tolak</a>
+				<a href = "index.php?halaman=hapuspembayaran&id=<?php echo $pecah['id_pendaftar'];?>" class="btn btn-danger">Tolak</a>
 			</td>
 		</tr>
 		<?php $nomor++; ?>
